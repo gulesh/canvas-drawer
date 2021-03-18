@@ -37,3 +37,7 @@ void canvas::background(unsigned char r, unsigned char g, unsigned char b)
 {
 }
 
+
+
+
+cout << "hello" <<endl;
