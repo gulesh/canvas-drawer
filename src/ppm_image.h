@@ -40,6 +40,19 @@ namespace agl
         // Get the pixel at index (row, col)
         void set(int row, int col, const ppm_pixel& color); 
 
+        //alpha blend
+        ppm_image alpha_blend(const ppm_image& other, float amount) const;
+        
+        //difference 
+        ppm_image difference(const ppm_image& other) const;
+
+        //multiply
+        ppm_image multiply(const ppm_image& other) const;
+
+        //add
+        ppm_image add(const ppm_image& other) const;
+
+
     private:
         ppm_pixel* myData;
         unsigned int myWidth;
